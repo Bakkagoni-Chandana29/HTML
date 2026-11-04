@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <title> HTML </title>
+</head>
+<!-- This is comment line -->
+<body>
+
+    <!-- <p> Hello World! </p> -->
+    <!-- <br> break line tag -->
+    <h1> Heading 1 </h1>
+    <h2> Heading 2 </h2>
+    <h3> Heading 3 </h3>
+    <h4> Heading 4 </h4>
+    <h5> Heading 5 </h5>
+    <h6> Heading 6 </h6>
+
+    <p> This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph</p> 
+    <!-- select line -> settings -> command palette -> toggle word wrap for paragraph in single page -->
+
+    <a href="https://www.google.com/" >Google</a> 
+    <!-- link for google website (absolute link) -->
+
+    <br /> <!-- break line tag -->
+    <a href="https://www.youtube.com/" >Youtube</a> <!-- link for youtube website-->
+    <br>
+
+    <a href="HelloFolder/Hello.html"> Go to Hello Page </a> <!--- link for Hello.html page (relative link) -->
+    <br>
+    <hr>
+
+    <!-- <img src = "https://m.media-amazon.com/images/I/41e3YGKg-3L.jpg" alt = "notebook"> --> <!-- external image link ( absolute link by internet ) -->
+    
+    <img src = "Image.jpg" alt = "notebook" height="100">  <!-- local image link (relative url) -->
+    <br>
+    <hr>
+
+    <b> BOLD </b>
+    <br>
+
+    <i> Italic </i>
+    <br>
+
+    <u> Underline </u>
+    <br>
+    <hr>
+
+    <p> 
+        <B>This is a paragraph</B> This is a paragraph This is a paragraph <u>This is a paragraph</u> This is a paragraph This is a paragraph This is a paragraph <i><u>This is a paragraph</u></i> This is a paragraph This is a paragraph This is a paragraph 
+    </p> 
+    <hr>
+    <br>
+
+    <big> This is a big text </big>
+    <hr> <!-- horizontal line tag -->
+    <small> This is a small text </small>
+    <hr>
+
+    <p>H<sub>2</sub>O</p> <!-- sub means subcript ex : 2 in H2O -->
+    <p>3<sup>2</sup> = 9</p> <!-- sup means superscript ex : 2 in 3^2 -->
+    <hr>
+
+    <p>
+        This
+        is a simple 
+        text.
+    </p> <!-- it prints in a single line -->
+    <hr>
+
+    <!-- pre tag is used for preformatted text -->
+    <pre> 
+        This is preformatted        text.
+        It preserves both spaces and line breaks.
+    </pre> <!-- it prints in the same format as it is written -->
+    <hr>
+
+    <!-- Project -->
+        <!-- Page Layout Techniques -> semantic tags for layout, right tags <p>, <h1> -->
+        <!-- header, main, footer -->
+
+    <!-- header is used to add header content -->
+    <header>
+        <h1> My Portfolio</h1>
+    </header>
+
+    <!-- main is used to contain the main content of the page -->
+    <main>
+        <section> Education : SMEC (ECE) | School (KS) </section>
+        <section> Experience : 1 Internship | 5 Projects </section>
+        <article> My Skills : HTML, CSS, JavaScript </article>
+        <a href="https://www.google.com/" target="_main"> Google <!-- by clicking on the link we can go to google --> </a>
+           <!-- or -->
+        <a href="https://www.google.com/" target="_main">
+            <img
+                src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="Google" height="20"> <!-- by clicking on the image we can go to google -->
+        </a>
+        <aside> This is an ad </aside>
+        <hr>
+        <div> <!-- div means division, it is used to divide the page into different sections -->
+            <p>Hello World!</p>
+            <p> namaste</p>
+            <p>hii</p>
+        </div> 
+        <div>
+            <p>byee</p>
+            <p>goodbye</p>
+            <p>see you later</p>
+        </div>
+        <span>hello guys</span> <!-- span is used to group inline elements in a document -->
+        <hr>
+        <!-- List in html (unordered and ordered lists)-->
+        <ul>
+            <li>Apple</li>
+                <ul>
+                    <li>color: red</li>
+                    <li>season: winter</li>
+                </ul>
+            <li>Mango</li>
+                <ul>
+                    <li>color: yellow</li>
+                    <li>season: summer</li>
+                </ul>
+            <li>Litchi</li>
+        </ul>
+        <ol>
+            <li>Apple</li>
+                <ol>
+                    <li>color: red</li>
+                    <li>season: winter</li>
+                </ol>
+            <li>Mango</li>
+                <ol>
+                    <li>color: yellow</li>
+                    <li>season: summer</li>
+                </ol>
+            <li>Banana</li> 
+        </ol>
+        <hr>
+        <!-- Table in HTML -->
+        <table>
+            <thead>
+                <caption> Student Details </caption>
+                <tr>
+                    <th colspan="2"> INFORMATION </th> <!--colspan means column span, it is used to merge two or more columns-->
+                    <!-- 
+                    <th> Name </th>
+                    <th> Rollno </th> 
+                    -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Chandu </td>
+                    <td> 101 </td>
+                </tr>
+                <tr>
+                    <td> Anju </td>
+                    <td> 102 </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <!-- Forms in html-->
+        <h4> Registration Form </h4>
+        <form action="/action.php">
+            <input type="text" placeholder="username">
+            <br>
+            <br>
+            <input type="password" placeholder="password">
+            <br>
+            <br>
+
+            <!-- Labels -->
+            <h5> Select your class </h5>
+            <label for="101">
+                <input type="radio" value="class XI" name="class" id="101">class XI
+            </label>
+            <br>
+            <label for="102">
+                <input type="radio" value="class XII" name="class" id="102">class XII
+            </label>
+            <br>
+
+            <!-- Checkboxes -->
+            <h5> Select your subjects </h5>
+            <label for="math">
+                <input type="checkbox" value="Math" name="subject" id="101">Math
+            </label>
+            <br>
+            <label for="phy">
+                <input type="checkbox" value="Physics" name="subject" id="102">Physics
+            </label>
+            <br>
+            <label for="chem">
+                <input type="checkbox" value="Chemistry" name="subject" id="103">Chemistry
+            </label>
+            <br><br>
+
+            <!-- select tag is used for creating dropdown lists -->
+            Select your city 
+            <select name="city">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+            <br><br><br>
+
+            <!-- textarea tag for feedback -->
+            <textarea name="feedback" id="101" placeholder="please give your feedback here" rows="2"></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <br><br>
+        </form>
+
+        <!-- iframe is used to embed external content -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=90OR2qBd28Y7A88E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br>
+
+        <!--
+        <iframe src="https://developer.mozilla.org/en-US/"></iframe> doesnot work because of X-Frame-Options header set to SAMEORIGIN
+        -->
+        <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/India"></iframe>
+        <br><br>
+
+        <!-- video tag is used to embed video content -->
+        <!-- 
+        Attributes: controls(means display controls), width(means width of the video), height(means height of the video), 
+        loop(means play the video in a loop), autoplay(means play the video automatically), src(means source of the video) 
+        -->
+        <!-- <video width="560" height="315" src="/myVideo.mp4" controls autoplay>My Video</video> -->
+
+    </main>
+
+    <!-- footer is used to add footer content -->
+    <footer>
+        <!-- <h5> contact me at hello@ac.com </h5> -->
+    </footer>
+
+</body>
+</html>
